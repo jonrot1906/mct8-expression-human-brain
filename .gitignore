@@ -1,0 +1,40 @@
+# This repository publishes analysis code only. Data, model weights and generated
+# figures are excluded; everything here is reproducible by running the scripts.
+
+# OS / editor / tooling
+.DS_Store
+._*
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+
+# Input data (CELLxGENE h5ad, ABC Atlas cache) - download via the README instructions
+data/
+*.h5ad
+abc_download_root/
+abc_atlas_cache/
+
+# Generated outputs of slc16a2_expression_fig7.py
+**/main_figure/
+**/robustness_threshold/
+**/robustness_pseudobulk/
+
+# Imaging: raw microscopy, QuPath projects, StarDist model weights
+*.tif
+*.tiff
+*.czi
+*.lif
+*.ndpi
+*.svs
+*.qpproj
+*.qpproj.backup
+*.pb
